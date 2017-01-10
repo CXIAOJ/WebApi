@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "City";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Content/CitySelect/area.js"></script>
+<script src="~/Content/CitySelect/jquery.js"></script>
+<script src="~/Content/CitySelect/location.js"></script>
+<script src="~/Content/CitySelect/select2.js"></script>
+<script src="~/Content/CitySelect/select2_locale_zh-CN.js"></script>
+<link href="~/Content/CitySelect/select2.css" rel="stylesheet" />
+
+<script>
+    $(document).ready(function () {
+        $().mousemove(function (e) {
+            alert(e.pageX);
+        })
+    })
+</script>
+
+<div style="margin-top:2%;">
+    <select id="loc_province" style="width:120px"> </select>
+    <select id="loc_city" style="width:160px"></select>
+    <select id="loc_town" style="width:150px"></select>
+</div>
+
+<input type="button" id="btntext" value="获取" style="padding:5px 15px;margin-top:10px" />
