@@ -1,0 +1,4 @@
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\TestClass\bin\Debug\TestClass.dll
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\TestClass\bin\Debug\TestClass.pdb
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\TestClass\obj\Debug\TestClass.dll
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\TestClass\obj\Debug\TestClass.pdb

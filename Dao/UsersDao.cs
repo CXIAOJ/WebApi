@@ -11,7 +11,7 @@ namespace Dao
 {
     public class UsersDao
     {
-        public static int AddUser(Users user)
+        public void AddUser(Users user)
         {
             string cols = @"name, age, address";
             string sql = $@"insert into users({cols}) values(@name, @age,@address')";
@@ -21,7 +21,6 @@ namespace Dao
                 Helper.MakeInParam("@age",(DbType)SqlDbType.Int,4,user.Age),
                 Helper.MakeInParam("@address",(DbType)SqlDbType.NVarChar,500,user.Address)
             };
-            return Helper.ExecuteScalar(sql, param);
         }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Biz\bin\Debug\Biz.dll
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Biz\bin\Debug\Biz.pdb
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Biz\obj\Debug\Biz.csprojResolveAssemblyReference.cache
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Biz\obj\Debug\Biz.dll
+C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Biz\obj\Debug\Biz.pdb
