@@ -303,6 +303,10 @@
       <Project>{3ee0ae31-206c-45a9-bb78-844ee5483e00}</Project>
       <Name>Biz</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Dao\Dao.csproj">
+      <Project>{4b83d6a7-e926-4f61-92bd-ce12f9fcb86d}</Project>
+      <Name>Dao</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestClass\TestClass.csproj">
       <Project>{7a2c8f5e-1d03-404f-8cdf-eeb7aaad4be8}</Project>
       <Name>TestClass</Name>

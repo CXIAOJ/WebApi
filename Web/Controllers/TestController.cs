@@ -1,11 +1,11 @@
-﻿using Biz;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TestClass;
 using System.Data;
+using Dao;
 
 namespace Web.Controllers
 {
@@ -27,8 +27,6 @@ namespace Web.Controllers
             var result1 = test.meth(ref num1);//ref 使用的变量必须赋初始值
             var result2 = test.meth(out num2);//out 使用的变量可以不赋初始值
             Helper helper = new Helper();
-            SqlDbType testq = SqlDbType.Int;
-            DbType test2 = DbType.Int32; 
             return View();
             
         }
