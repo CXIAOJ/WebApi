@@ -1,5 +1,0 @@
-C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Entity\bin\Debug\Entity.dll
-C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Entity\bin\Debug\Entity.pdb
-C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
-C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Entity\obj\Debug\Entity.dll
-C:\Users\zhuping\documents\visual studio 2015\Projects\WebApi\Entity\obj\Debug\Entity.pdb

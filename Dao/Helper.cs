@@ -11,7 +11,7 @@ namespace Dao
 {
     public class Helper
     {
-        private string ConnStr = ConfigurationManager.AppSettings["ConnectionStr"].ToString();
+        private static string ConnStr = ConfigurationManager.AppSettings["ConnectionStr"].ToString();
         public Helper()
         {
             string conStr = ConfigurationManager.AppSettings["ConnectionStr"].ToString();
@@ -73,13 +73,44 @@ namespace Dao
             }
         }
 
-        public void ExecuteScalar()
+        public static int ExecuteScalar(string sql,SqlParameter[] parameters)
         {
+            int num = 0;
             using(SqlConnection conn=new SqlConnection())
             {
-                conn.ConnectionString = ConnStr;
+                conn.ConnectionString = Helper.ConnStr;
                 conn.Open();
+                SqlCommand commd = new SqlCommand();
+                commd.Connection = conn;
+                commd.CommandType = CommandType.Text;
+                commd.CommandText = sql;
+                foreach(SqlParameter parameter in parameters)
+                {
+                    if((ParameterDirection.Output==parameter.Direction || ParameterDirection.InputOutput == parameter.Direction) && (parameter.Value == null))
+                    {
+                        parameter.Value = DBNull.Value;
+                    }
+                    commd.Parameters.Add(parameter);
+                }
+                using(SqlTransaction tran =conn.BeginTransaction())
+                {
+                    try
+                    {
+                        commd.Transaction = tran;
+                        num=Convert.ToInt32(commd.ExecuteScalar());
+                        tran.Commit();
+                    }
+                    catch (Exception)
+                    {
+                        tran.Rollback();
+                    }
+                    finally
+                    {
+                        tran.Dispose();
+                    }
+                }
             }
+            return num;
         }
 
         public static SqlParameter MakeInParam(string paramName,DbType type,int size,object value)
