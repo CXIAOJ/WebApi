@@ -307,10 +307,6 @@
       <Project>{4b83d6a7-e926-4f61-92bd-ce12f9fcb86d}</Project>
       <Name>Dao</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entity\Entity.csproj">
-      <Project>{9ffd08d4-25c9-4b82-a756-da6c8f309dfc}</Project>
-      <Name>Entity</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TestClass\TestClass.csproj">
       <Project>{7a2c8f5e-1d03-404f-8cdf-eeb7aaad4be8}</Project>
       <Name>TestClass</Name>

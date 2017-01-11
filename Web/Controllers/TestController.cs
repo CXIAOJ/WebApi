@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using TestClass;
 using System.Data;
 using Dao;
-using Biz;
 
 namespace Web.Controllers
 {
@@ -28,9 +27,6 @@ namespace Web.Controllers
             var result1 = test.meth(ref num1);//ref 使用的变量必须赋初始值
             var result2 = test.meth(out num2);//out 使用的变量可以不赋初始值
             Helper helper = new Helper();
-
-            Entity.Users usermodel = new Entity.Users() { Name = "Andy", Age = 22, Address = "江苏盐城" };
-            var num = UsersBiz.AddUser(usermodel);
             return View();
             
         }
